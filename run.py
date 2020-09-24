@@ -6,6 +6,8 @@ logging.basicConfig(format='%(asctime)s - line:%(lineno)d - %(levelname)s - %(me
 
 def main():
     print(time.ctime())
+    with open('record.log', 'w') as fw:
+        fw.write(time.ctime())
     
 
 if __name__ == '__main__':
