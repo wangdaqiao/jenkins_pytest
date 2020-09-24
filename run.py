@@ -8,6 +8,7 @@ def main():
     print(time.ctime())
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     with open('record.log', 'w') as fw:
+        fw.write('Hello. \n')
         fw.write(now)
         fw.write('\n\n')
         fw.write(time.ctime())
